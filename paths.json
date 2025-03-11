@@ -1,11 +1,5 @@
-
 {
   "mappings": [
-    "/content/unity/:/",
-    "/content/unity/configuration:/.helix/config.json",
-    "/content/unity/metadata:/metadata.json"
-  ],
-  "includes": [
-    "/content/unity/"
+    "/:/"
   ]
 }
