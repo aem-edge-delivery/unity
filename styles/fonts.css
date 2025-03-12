@@ -1,10 +1,227 @@
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/4627092dc219a0c7-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/b4f46b1ccc361ec4-s.p.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/623a6513000dba8b-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/4627092dc219a0c7-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/b4f46b1ccc361ec4-s.p.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/623a6513000dba8b-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/4627092dc219a0c7-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/b4f46b1ccc361ec4-s.p.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/623a6513000dba8b-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/4627092dc219a0c7-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/b4f46b1ccc361ec4-s.p.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/623a6513000dba8b-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/4627092dc219a0c7-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/b4f46b1ccc361ec4-s.p.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/623a6513000dba8b-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/4627092dc219a0c7-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/b4f46b1ccc361ec4-s.p.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/623a6513000dba8b-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/4627092dc219a0c7-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/b4f46b1ccc361ec4-s.p.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/623a6513000dba8b-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/4627092dc219a0c7-s.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_6c4688;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: 100%;
+  font-display: block;
+  src: url('../fonts/b4f46b1ccc361ec4-s.p.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: __Archivo_Fallback_6c4688;
+  src: local('Arial');
+  ascent-override: 88.96%;
+  descent-override: 21.28%;
+  line-gap-override: 0.00%;
+  size-adjust: 98.70%;
+}
+
+
 @font-face {
   font-family: roboto;
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url('../fonts/roboto-bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -13,5 +230,4 @@
   font-weight: 400;
   font-display: swap;
   src: url('../fonts/roboto-regular.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
