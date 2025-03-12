@@ -14,10 +14,10 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: white;
-  --light-color: #eee;
-  --dark-color: #ccc;
-  --text-color: black;
+  --background-color: #ffffff;
+  --light-color: #eeeeee;
+  --dark-color: #cccccc;
+  --text-color: #000000;
 
   /* fonts */
   --body-font-family:  __Archivo_6c4688, __Archivo_Fallback_6c4688;
