@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: https://author-p140426-e1433687.adobeaemcloud.com/bin/franklin.delivery/aem-edge-delivery/unity/main
+    url: https://author-p133911-e1313554.adobeaemcloud.com/bin/franklin.delivery/aem-edge-delivery/unity/main
     type: "markup"
     suffix: ".html"
