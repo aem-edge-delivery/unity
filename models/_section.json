@@ -37,8 +37,20 @@
               "value": "take-charge"
             },
             {
+              "name": "Across Multiple",
+              "value": "across-multiple"
+            },
+            {
               "name": "Banking Simple",
               "value": "banking-simple"
+            },
+            {
+              "name": "Customers Say",
+              "value": "customers-say"
+            },
+            {
+              "name": "Blogs Stories",
+              "value": "blogs-stories"
             },
             {
               "name": "Elevate Banking",
