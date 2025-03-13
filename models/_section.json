@@ -27,6 +27,22 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Within Reach",
+              "value": "within-reach"
+            },
+            {
+              "name": "Take Charge",
+              "value": "take-charge"
+            },
+            {
+              "name": "Banking Simple",
+              "value": "banking-simple"
+            },
+            {
+              "name": "Elevate Banking",
+              "value": "elevate-banking"
             }
           ]
         }
