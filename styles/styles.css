@@ -140,7 +140,7 @@ a.button:any-link, button {
   box-sizing: border-box;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: 5px 30px;
+  padding: 5px 10px 5px 0;
   text-align: center;
   font-style: normal;
   font-weight: 600;
@@ -149,7 +149,7 @@ a.button:any-link, button {
   background-color: transparent;
   font-size: 16px;
   line-height: 20px;
-  margin: 5px 0;
+  margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -217,6 +217,21 @@ main .section.highlight {
 main .section.within-reach {
   background-color: #e6f4ff;
 }
+
+main .section.within-reach h2 {
+  transform: translate(-50%, -50%);
+  translate: none;
+  rotate: none;
+  scale: none;
+  width: 100%;
+  border-radius: 32px;
+  text-align: center;
+}
+main .section.within-reach h2:focus {
+  transform: translate(-50%, -50%) scale(1.6, 1.6);
+}
+
+
 
 main .section.take-charge {
   background-color: #fff6e0;
