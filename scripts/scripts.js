@@ -180,7 +180,7 @@ function handleClassScrollFocus() {
       } else {
         // Reset to default with animation when out of view
         entry.target.style.transition = 'background-color 0.5s ease';
-        entry.target.style.backgroundColor = '#e6f4ff';
+        entry.target.style.backgroundColor = '#fffef9';
       }
     });
   }, {
