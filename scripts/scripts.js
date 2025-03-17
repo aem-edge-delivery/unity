@@ -154,9 +154,6 @@ async function loadPage() {
 loadPage();
 
 
-
-
-
 // Handle scroll-based background color changes for specific classes
 function handleClassScrollFocus() {
   const observer = new IntersectionObserver((entries) => {
