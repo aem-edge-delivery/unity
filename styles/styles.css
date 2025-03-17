@@ -210,3 +210,32 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+
+main .section.within-reach {
+  background-color: #e6f4ff;
+}
+
+main .section.take-charge {
+  background-color: #fff6e0;
+}
+
+main .section.across-multiple {
+  background-color: #fff6e0;
+}
+
+main .section.banking-simple {
+  background-color: #f8eeff;
+}
+
+main .section.customers-say {
+  background-color: #f8eeff;
+}
+
+main .section.blogs-stories {
+  background-color: #f8eeff;
+} 
+
+main .section.elevate-banking {
+  background-color: #000000;
+}
