@@ -153,35 +153,6 @@ async function loadPage() {
 
 loadPage();
 
-/*
-// Handle scroll-based background color changes
-function handleScrollFocus() {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.backgroundColor = '#f0f0f0'; // Change to focused color
-      } else {
-        entry.target.style.backgroundColor = ''; // Reset to default
-      }
-    });
-  }, {
-    threshold: 0.5 // Trigger when 50% of element is visible
-  });
-
-  // Observe all divs in the document
-  document.querySelectorAll('div').forEach(div => {
-    observer.observe(div);
-  });
-
-  document.getElementsByClassName(".within-reach").getElementsByTagName("h2").forEach(div => {
-    observer.observe(div);
-  });
-
-}
-
-// Initialize scroll focus handling after page load
-window.addEventListener('load', handleScrollFocus);
-*/
 
 
 
@@ -191,7 +162,8 @@ function handleClassScrollFocus() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Add focused background color when element is in view
+        // Add focused background color with animation when element is in view
+        entry.target.style.transition = 'background-color 0.5s ease';
         if (entry.target.classList.contains('within-reach')) {
           entry.target.style.backgroundColor = '#e6f4ff';
         } else if (entry.target.classList.contains('take-charge')) {
@@ -202,7 +174,8 @@ function handleClassScrollFocus() {
           entry.target.style.backgroundColor = '#000000';
         }
       } else {
-        // Reset to default when out of view
+        // Reset to default with animation when out of view
+        entry.target.style.transition = 'background-color 0.5s ease';
         entry.target.style.backgroundColor = '';
       }
     });

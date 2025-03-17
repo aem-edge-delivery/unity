@@ -222,47 +222,117 @@ main .section.within-reach h2 {
   width: 100%;
   border-radius: 32px;
   text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 5% 25%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-/*
-main .section.within-reach h2 {
-  transform: translate(-50%, -50%);
-  translate: none;
-  rotate: none;
-  scale: none;
+main .section.take-charge {
+  background-color: #ffffff;
+}
+main .section.take-charge h2 {
+  background-color: #fff6e0;
   width: 100%;
   border-radius: 32px;
   text-align: center;
-}
-main .section.within-reach h2:focus {
-  //transform: translate(-50%, -50%) scale(1.6, 1.6);
-}
-*/
-
-
-
-main .section.take-charge {
-  background-color: #fff6e0;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 5% 25%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main .section.across-multiple {
   background-color: #fff6e0;
 }
+main .section.across-multiple h2 {
+  background-color: #fff6e0;
+  width: 100%;
+  border-radius: 32px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 1% 25%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 main .section.banking-simple {
   background-color: #f8eeff;
 }
+main .section.banking-simple h2 {
+  background-color: #f8eeff;
+  width: 100%;
+  border-radius: 32px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 5% 25%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 main .section.customers-say {
   background-color: #f8eeff;
 }
+main .section.customers-say h2 {
+  background-color: #f8eeff;
+  width: 100%;
+  border-radius: 32px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 1% 25%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 main .section.blogs-stories {
   background-color: #f8eeff;
 } 
+main .section.blogs-stories h2 {
+  background-color: #f8eeff;
+  width: 100%;
+  border-radius: 32px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 1% 25%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 main .section.elevate-banking {
   background-color: #000000;
   color: #ffffff;
+}
+main .section.banking-simple h2 {
+  background-color: #000000;
+  width: 100%;
+  border-radius: 32px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 5% 25%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
