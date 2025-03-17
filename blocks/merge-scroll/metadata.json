@@ -1,6 +1,10 @@
-
-
 {
+  "name": "Merge Scroll",
+  "description": "A block with background merge scroll effect",
+  "version": "1.0.0",
+  "main": "merge-scroll.js",
+  "style": "merge-scroll.css",
+  "dependencies": [],
   "definitions": [
     {
       "title": "Merge Scroll",
@@ -22,6 +26,13 @@
     {
       "id": "merge-scroll",
       "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
         {
           "component": "text",
           "valueType": "string",
