@@ -152,3 +152,78 @@ async function loadPage() {
 }
 
 loadPage();
+
+/*
+// Handle scroll-based background color changes
+function handleScrollFocus() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.backgroundColor = '#f0f0f0'; // Change to focused color
+      } else {
+        entry.target.style.backgroundColor = ''; // Reset to default
+      }
+    });
+  }, {
+    threshold: 0.5 // Trigger when 50% of element is visible
+  });
+
+  // Observe all divs in the document
+  document.querySelectorAll('div').forEach(div => {
+    observer.observe(div);
+  });
+
+  document.getElementsByClassName(".within-reach").getElementsByTagName("h2").forEach(div => {
+    observer.observe(div);
+  });
+
+}
+
+// Initialize scroll focus handling after page load
+window.addEventListener('load', handleScrollFocus);
+*/
+
+
+
+
+// Handle scroll-based background color changes for specific classes
+function handleClassScrollFocus() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Add focused background color when element is in view
+        if (entry.target.classList.contains('within-reach')) {
+          entry.target.style.backgroundColor = '#e6f4ff';
+        } else if (entry.target.classList.contains('take-charge')) {
+          entry.target.style.backgroundColor = '#fff6e0';
+        } else if (entry.target.classList.contains('banking-simple')) {
+          entry.target.style.backgroundColor = '#f8eeff';
+        } else if (entry.target.classList.contains('elevate-banking')) {
+          entry.target.style.backgroundColor = '#000000';
+        }
+      } else {
+        // Reset to default when out of view
+        entry.target.style.backgroundColor = '';
+      }
+    });
+  }, {
+    threshold: 0.3 // Trigger when 30% of element is visible
+  });
+
+  // Observe elements with specific classes
+  const classesToObserve = [
+    'within-reach',
+    'take-charge', 
+    'banking-simple',
+    'elevate-banking'
+  ];
+
+  classesToObserve.forEach(className => {
+    document.querySelectorAll(`.${className}`).forEach(element => {
+      observer.observe(element);
+    });
+  });
+}
+
+// Initialize class-specific scroll focus handling
+window.addEventListener('load', handleClassScrollFocus);

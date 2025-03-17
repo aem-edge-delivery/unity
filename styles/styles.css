@@ -217,7 +217,15 @@ main .section.highlight {
 main .section.within-reach {
   background-color: #e6f4ff;
 }
+main .section.within-reach h2 {
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 32px;
+  text-align: center;
+}
 
+
+/*
 main .section.within-reach h2 {
   transform: translate(-50%, -50%);
   translate: none;
@@ -228,8 +236,9 @@ main .section.within-reach h2 {
   text-align: center;
 }
 main .section.within-reach h2:focus {
-  transform: translate(-50%, -50%) scale(1.6, 1.6);
+  //transform: translate(-50%, -50%) scale(1.6, 1.6);
 }
+*/
 
 
 
