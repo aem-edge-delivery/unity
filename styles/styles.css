@@ -215,7 +215,7 @@ main .section.highlight {
 
 
 main .section.within-reach {
-  background-color: #ffffff;
+  background-color: #fffef9;
 }
 main .section.within-reach h2 {
   background-color: #e6f4ff;
@@ -232,7 +232,7 @@ main .section.within-reach h2 {
 }
 
 main .section.take-charge {
-  background-color: #ffffff;
+  background-color: #e6f4ff;
 }
 main .section.take-charge h2 {
   background-color: #fff6e0;
@@ -266,7 +266,7 @@ main .section.across-multiple h2 {
 }
 
 main .section.banking-simple {
-  background-color: #f8eeff;
+  background-color: #fff6e0;
 }
 main .section.banking-simple h2 {
   background-color: #f8eeff;
@@ -320,7 +320,7 @@ main .section.blogs-stories h2 {
 
 
 main .section.elevate-banking {
-  background-color: #000000;
+  background-color: #f8eeff;
   color: #ffffff;
 }
 main .section.elevate-banking h2 {
