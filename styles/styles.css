@@ -168,14 +168,14 @@ a.button:any-link::after, button::after {
   font-family: var(--fa-font-family);
   content: "\f061";
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 100;
-  width: 15px;
+  width: 20px;
   float: right;
   margin-left: 0;
-  margin-top: 5px;
+  margin-top: 0;
   border: none;
-  padding: 5px;
+  padding: 1px 5px;
   cursor: pointer;
 }
 
