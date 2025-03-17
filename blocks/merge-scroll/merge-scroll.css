@@ -1,0 +1,32 @@
+.merge-scroll {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  padding: 4rem 0;
+}
+
+.merge-scroll-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.merge-scroll-content {
+  position: relative;
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .merge-scroll {
+    padding: 2rem 0;
+  }
+  
+  .merge-scroll-container {
+    padding: 0 0.5rem;
+  }
+} 

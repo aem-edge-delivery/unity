@@ -392,6 +392,17 @@
     ]
   },
   {
+    "id": "merge-scroll",
+    "fields": [
+      {
+        "component": "text",
+        "name": "jcr:title",
+        "label": "Title",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "form-button",
     "fields": [
       {
