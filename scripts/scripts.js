@@ -166,16 +166,16 @@ function handleClassScrollFocus() {
         entry.target.style.transition = 'background-color 0.5s ease';
         if (entry.target.classList.contains('within-reach')) {
           entry.target.style.backgroundColor = '#e6f4ff';
-          entry.target.previousElementSibling?.style.backgroundColor = '#e6f4ff';
+          entry.target.previousElementSibling.style.backgroundColor = '#e6f4ff';
         } else if (entry.target.classList.contains('take-charge')) {
           entry.target.style.backgroundColor = '#fff6e0';
-          entry.target.previousElementSibling?.style.backgroundColor = '#fff6e0';
+          entry.target.previousElementSibling.style.backgroundColor = '#fff6e0';
         } else if (entry.target.classList.contains('banking-simple')) {
           entry.target.style.backgroundColor = '#f8eeff';
-          entry.target.previousElementSibling?.style.backgroundColor = '#f8eeff';
+          entry.target.previousElementSibling.style.backgroundColor = '#f8eeff';
         } else if (entry.target.classList.contains('elevate-banking')) {
           entry.target.style.backgroundColor = '#000000';
-          entry.target.previousElementSibling?.style.backgroundColor = '#000000';
+          entry.target.previousElementSibling.style.backgroundColor = '#000000';
         }
       } else {
         // Reset to default with animation when out of view
