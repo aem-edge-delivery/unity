@@ -145,9 +145,11 @@ a.button:any-link, button {
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
-  margin: 16px 0;
+  color: var(--text-color);
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 5px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -155,12 +157,12 @@ a.button:any-link, button {
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
-  cursor: pointer;
+  background-color: transparent;
+  color: var(--text-color);
 }
 
 button:disabled, button:disabled:hover {
-  background-color: var(--light-color);
+  background-color: transparent;
   cursor: unset;
 }
 
