@@ -215,10 +215,10 @@ main .section.highlight {
 
 
 main .section.within-reach {
-  background-color: #e6f4ff;
+  background-color: #ffffff;
 }
 main .section.within-reach h2 {
-  background-color: #ffffff;
+  background-color: #e6f4ff;
   width: 100%;
   border-radius: 32px;
   text-align: center;
