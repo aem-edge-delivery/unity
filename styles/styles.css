@@ -23,6 +23,7 @@
   --body-font-family:  __Archivo_6c4688, __Archivo_Fallback_6c4688;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family:  __Archivo_6c4688, __Archivo_Fallback_6c4688;
+  --fa-font-family:  'Font Awesome 5 Solid', 'Font Awesome 5 Free', 'Font Awesome 5 Brands', 'Font Awesome';
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -81,7 +82,7 @@ header {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -155,16 +156,29 @@ a.button:any-link, button {
   text-overflow: ellipsis;
   border-radius: 30px;
 }
-
 a.button:hover, a.button:focus, button:hover, button:focus  {
   background-color: transparent;
   color: var(--text-color);
 }
-
 button:disabled, button:disabled:hover {
   background-color: transparent;
   cursor: unset;
 }
+a.button:any-link::after, button::after {
+  font-family: var(--fa-font-family);
+  content: "\f061";
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 100;
+  width: 15px;
+  float: right;
+  margin-left: 0;
+  margin-top: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
 
 a.button.secondary, button.secondary {
   background-color: unset;
@@ -230,6 +244,29 @@ main .section.within-reach h2 {
   align-items: center;
   justify-content: center;
 }
+main .section.within-reach .columns-wrapper {
+  margin-bottom: 150px;
+}
+main .section.within-reach .columns img {
+  display: block;
+  width: 40%;
+  min-width: 150px;
+  margin: auto;
+}
+main .section.within-reach .columns .column p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+main .section.within-reach .columns .columns-img-col img {
+  display: block;
+  width: 80%;
+  min-width: 400px;
+  margin: auto;
+}
+
+
+
 
 main .section.take-charge {
   background-color: #e6f4ff;

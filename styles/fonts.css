@@ -231,3 +231,9 @@
   font-display: swap;
   src: url('../fonts/roboto-regular.woff2') format('woff2');
 }
+
+
+
+/* Font Awesome Styles */
+@import url('fa.css');
+
