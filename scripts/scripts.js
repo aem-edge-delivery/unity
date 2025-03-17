@@ -161,6 +161,8 @@ loadPage();
 function handleClassScrollFocus() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+      let lastScrollY = window.scrollY;
+      
       if (entry.isIntersecting) {
         // Add focused background color with animation when element is in view
         entry.target.style.transition = 'background-color 0.5s ease';
@@ -174,9 +176,13 @@ function handleClassScrollFocus() {
           entry.target.style.backgroundColor = '#000000';
         }
       } else {
-        // Reset to default with animation when out of view
-        //entry.target.style.transition = 'background-color 0.5s ease';
-        //entry.target.style.backgroundColor = '';
+        // Only reset styles when scrolling up
+        const currentScrollY = window.scrollY;
+        if (currentScrollY < lastScrollY) {
+          entry.target.style.transition = 'background-color 0.5s ease';
+          entry.target.style.backgroundColor = '';
+        }
+        lastScrollY = currentScrollY;
       }
     });
   }, {
