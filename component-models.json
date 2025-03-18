@@ -4752,17 +4752,17 @@
             "valueType": "string"
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "content-fragment",
+    "fields": [
       {
-        "id": "content-fragment",
-        "fields": [
-          {
-            "component": "aem-content",
-            "name": "contentFragmentPath",
-            "label": "Content Fragment path",
-            "valueType": "string"
-          }
-        ]
+        "component": "aem-content-fragment",
+        "name": "contentFragmentPath",
+        "label": "Content Fragment path",
+        "valueType": "string"
       }
     ]
   }
