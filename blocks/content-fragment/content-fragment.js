@@ -1,6 +1,6 @@
 export default async function decorate(block) {
     console.log("Content Fragment component executed successfully");
-    const offerpath = block.querySelector(':scope div:nth-child(1) > div a').innerHTML.trim();
+    //const offerpath = block.querySelector(':scope div:nth-child(1) > div a').innerHTML.trim();
     const cfReq = await fetch("https://author-p140426-e1433687.adobeaemcloud.com/content/dam/mobile/en/fragments/default/jcr%3Acontent/data/master.json")
     .then((response) => response.json()).then((contentfragment) => {
       let offer = {};
