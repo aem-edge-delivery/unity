@@ -48,7 +48,7 @@
     --form-upload-font-size: var(--form-font-size-xs);
     --form-upload-background-color: var(--background-color-primary);
     --form-submit-width: 100%;
-    --form-width: 100%;
+    --form-width: 66.66%;
     --form-wizard-border: 0;
     --form-wizard-background-color: var(--background-color-primary);
     --form-wizard-border-color: #757575;
@@ -76,6 +76,12 @@ form output {
 
 form:not(.edit-mode) [data-visible="false"] {
     display: none !important;
+}
+
+main .form-wrapper {
+    width: var(--form-width);
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 main .form-container {
@@ -393,13 +399,16 @@ main .file-wrapper .file-description button::after{
 }
 
 main .form .button-wrapper button {
-    cursor:pointer
+    width: 100%;
+    color: var(--background-color-primary);
+    background-color: #2a3238;
+    cursor: pointer;
 }
 
 main .form .button-wrapper button:hover {
-    border: 3px solid var(#fff);
-    color: #fff;
-    background-color: var(--button-secondary-color);
+    background-color: #3a4248;
+    border: none;
+    color: var(--background-color-primary);
 }
 
 main .form .button-wrapper button[disabled] {
