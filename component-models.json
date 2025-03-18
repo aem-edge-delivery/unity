@@ -4757,9 +4757,8 @@
         "id": "content-fragment",
         "fields": [
           {
-            "component": "aem-content-fragment",
+            "component": "aem-content",
             "name": "contentFragmentPath",
-            "value": "",
             "label": "Content Fragment path",
             "valueType": "string"
           }
