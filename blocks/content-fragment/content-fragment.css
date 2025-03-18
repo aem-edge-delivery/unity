@@ -1,4 +1,4 @@
-.content-fragment-wrapper {
+/* .content-fragment-wrapper {
     width: 100%;
     box-sizing: border-box;
 }
@@ -103,27 +103,4 @@
 
 .cta-button:hover {
     background-color: #1a5ab0;
-}
-
-@media (width >= 600px) {
-    .banner-content {
-        width: 100%;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    .banner-text-content .headline {
-        font-size: 48px;
-        line-height: 48px;
-    }
-
-    .banner-text-content .pretitle {
-        font-size: 48px;
-        line-height: 48px;
-    }
-
-    .banner-text-content .description {
-        font-size: 18px;
-        line-height: 72px;
-    }
-}
+} */
