@@ -254,7 +254,6 @@ main .section.within-reach .columns img {
   margin: auto;
 }
 main .section.within-reach .columns p {
-  text-align: center;
   font-size: 22px;
   font-weight: 600;
 }
@@ -284,6 +283,47 @@ main .section.take-charge h2 {
   align-items: center;
   justify-content: center;
 }
+main .section.take-charge .cards-wrapper {
+  margin-bottom: 150px;
+}
+main .section.take-charge .cards-wrapper .cards ul li {
+  display: flex;
+  flex-direction: column-reverse;
+}
+main .section.take-charge .cards-wrapper .cards ul li .cards-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .section.take-charge .cards-wrapper .cards ul li .cards-card-body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .section.take-charge .cards-wrapper .cards h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 15px 0;
+}
+main .section.take-charge .cards-wrapper .cards p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+main .section.take-charge .cards-wrapper .cards img {
+  width: 50%;
+  min-width: 140px;
+  float: right;
+  object-fit: contain;
+}
+
+
+
+
 
 main .section.across-multiple {
   background-color: #fff6e0;
