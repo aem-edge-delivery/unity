@@ -406,9 +406,9 @@ main .form .button-wrapper button {
 }
 
 main .form .button-wrapper button:hover {
-    background-color: #3a4248;
-    border: none;
-    color: var(--background-color-primary);
+    border: 3px solid var(#fff);
+    color: #fff;
+    background-color: var(--button-secondary-color);
 }
 
 main .form .button-wrapper button[disabled] {
