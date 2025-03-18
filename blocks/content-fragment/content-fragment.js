@@ -1,5 +1,5 @@
 export default async function decorate(block) {
-    console.log("offer component executed successfully");
+    console.log("Content Fragment component executed successfully");
     const aempublishurl = 'https://publish-p140426-e1433687.adobeaemcloud.com/';
     const aemauthorurl = 'https://author-p140426-e1433687.adobeaemcloud.com/';
     const offerpath = block.querySelector(':scope div:nth-child(1) > div a').innerHTML.trim();
