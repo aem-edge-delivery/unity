@@ -28,5 +28,16 @@ function days(endDate, startDate) {
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
 
+/**
+ * Validate Field
+ * @name validateField Validates if field matches the pattern of exactly 6 numeric digits
+ * @param {string} fieldname Field to validate
+ * @return {string} Returns 'valid' if field matches pattern, 'not valid' otherwise
+ */
+function validateField(fieldname) {
+    const regex = /^\d{6}$/;
+    return regex.test(fieldname) ? 'valid' : 'not valid';
+}
+
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName, days };
+export { getFullName, days, validateField };
