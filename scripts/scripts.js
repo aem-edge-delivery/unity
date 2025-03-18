@@ -152,3 +152,52 @@ async function loadPage() {
 }
 
 loadPage();
+
+
+// Handle scroll-based background color changes for specific classes
+function handleClassScrollFocus() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Add focused background color with animation when element is in view
+        entry.target.style.transition = 'background-color 0.5s ease';
+        if (entry.target.classList.contains('within-reach')) {
+          entry.target.style.backgroundColor = '#e6f4ff';
+          //entry.target.previousElementSibling.style.backgroundColor = '#e6f4ff';
+        } else if (entry.target.classList.contains('take-charge')) {
+          entry.target.style.backgroundColor = '#fff6e0';
+          entry.target.previousElementSibling.style.backgroundColor = '#fff6e0';
+        } else if (entry.target.classList.contains('banking-simple')) {
+          entry.target.style.backgroundColor = '#f8eeff';
+          entry.target.previousElementSibling.style.backgroundColor = '#f8eeff';
+        } else if (entry.target.classList.contains('elevate-banking')) {
+          entry.target.style.backgroundColor = '#000000';
+          entry.target.previousElementSibling.style.backgroundColor = '#000000';
+        }
+      } else {
+        // Reset to default with animation when out of view
+        //entry.target.style.transition = 'background-color 0.5s ease';
+        //entry.target.style.backgroundColor = '';
+      }
+    });
+  }, {
+    threshold: 0.3 // Trigger when 30% of element is visible
+  });
+
+  // Observe elements with specific classes
+  const classesToObserve = [
+    'within-reach',
+    'take-charge', 
+    'banking-simple',
+    'elevate-banking'
+  ];
+
+  classesToObserve.forEach(className => {
+    document.querySelectorAll(`.${className}`).forEach(element => {
+      observer.observe(element);
+    });
+  });
+}
+
+// Initialize class-specific scroll focus handling
+window.addEventListener('load', handleClassScrollFocus);

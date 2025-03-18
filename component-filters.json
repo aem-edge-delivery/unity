@@ -13,11 +13,18 @@
       "button",
       "title",
       "hero",
+      "merge-scroll",
       "cards",
       "columns",
       "fragment",
       "form",
       "form-embed"
+    ]
+  },
+  {
+    "id": "merge-scroll",
+    "components": [
+      "merge-scroll"
     ]
   },
   {
