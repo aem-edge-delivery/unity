@@ -18,7 +18,8 @@
       "columns",
       "fragment",
       "form",
-      "form-embed"
+      "form-embed",
+      "content-fragment"
     ]
   },
   {

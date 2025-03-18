@@ -4754,5 +4754,16 @@
         ]
       }
     ]
+  },
+  {
+    "id": "content-fragment",
+    "fields": [
+      {
+        "component": "aem-content-fragment",
+        "name": "contentFragmentPath",
+        "label": "Content Fragment path",
+        "valueType": "string"
+      }
+    ]
   }
 ]
