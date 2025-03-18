@@ -350,6 +350,55 @@ main .section.across-multiple h2 {
   align-items: center;
   justify-content: center;
 }
+main .section.across-multiple .cards-wrapper {
+  margin-bottom: 150px;
+}
+main .section.across-multiple .cards-wrapper .cards ul {
+  grid-template-columns: auto auto auto;
+}
+main .section.across-multiple .cards-wrapper .cards ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: none;
+  position: relative;
+  background: transparent;
+}
+main .section.across-multiple .cards-wrapper .cards ul li .cards-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .section.across-multiple .cards-wrapper .cards ul li .cards-card-body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .section.across-multiple .cards-wrapper .cards h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 15px 0;
+}
+main .section.across-multiple .cards-wrapper .cards p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+main .section.across-multiple .cards-wrapper .cards img {
+  width: 75%;
+  min-width: 200px;
+  float: left;
+  object-fit: contain;
+}
+
+
+
+
+
 
 main .section.banking-simple {
   background-color: #fff6e0;
