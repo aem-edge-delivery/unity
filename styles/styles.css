@@ -286,9 +286,18 @@ main .section.take-charge h2 {
 main .section.take-charge .cards-wrapper {
   margin-bottom: 150px;
 }
+main .section.take-charge .cards-wrapper .cards ul {
+  grid-template-columns: auto auto auto;
+}
 main .section.take-charge .cards-wrapper .cards ul li {
   display: flex;
   flex-direction: column-reverse;
+  padding: 32px 32px 40px;
+  border: none;
+  border-radius: 16px;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 16px 0 hsla(50, 20%, 57%, .12), 0 0 4px 0 rgba(0, 0, 0, .1), 0 0 1px 0 rgba(0, 0, 0, .13);
 }
 main .section.take-charge .cards-wrapper .cards ul li .cards-card-image {
   width: 100%;
