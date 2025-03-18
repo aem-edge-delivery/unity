@@ -205,7 +205,7 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 16px;
+  padding: 50px 16px;
 }
 
 @media (width >= 600px) {
@@ -283,9 +283,6 @@ main .section.take-charge h2 {
   align-items: center;
   justify-content: center;
 }
-main .section.take-charge .cards-wrapper {
-  margin-bottom: 150px;
-}
 main .section.take-charge .cards-wrapper .cards ul {
   grid-template-columns: auto auto auto;
 }
@@ -349,9 +346,6 @@ main .section.across-multiple h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-main .section.across-multiple .cards-wrapper {
-  margin-bottom: 150px;
 }
 main .section.across-multiple .cards-wrapper .cards ul {
   grid-template-columns: auto auto auto;
