@@ -400,8 +400,6 @@ main .file-wrapper .file-description button::after{
 
 main .form .button-wrapper button {
     width: 100%;
-    color: var(--background-color-primary);
-    background-color: #2a3238;
     cursor: pointer;
 }
 
