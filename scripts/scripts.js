@@ -164,7 +164,7 @@ function handleClassScrollFocus() {
         entry.target.style.transition = 'background-color 0.5s ease';
         if (entry.target.classList.contains('within-reach')) {
           entry.target.style.backgroundColor = '#e6f4ff';
-          //entry.target.previousElementSibling.style.backgroundColor = '#e6f4ff';
+          entry.target.previousElementSibling.style.backgroundColor = '#e6f4ff'; // Uncommented this line
         } else if (entry.target.classList.contains('take-charge')) {
           entry.target.style.backgroundColor = '#fff6e0';
           entry.target.previousElementSibling.style.backgroundColor = '#fff6e0';
@@ -177,8 +177,11 @@ function handleClassScrollFocus() {
         }
       } else {
         // Reset to default with animation when out of view
-        //entry.target.style.transition = 'background-color 0.5s ease';
-        //entry.target.style.backgroundColor = '';
+        entry.target.style.transition = 'background-color 0.5s ease';
+        entry.target.style.backgroundColor = '';
+        if (entry.target.previousElementSibling) {
+          entry.target.previousElementSibling.style.backgroundColor = '';
+        }
       }
     });
   }, {
