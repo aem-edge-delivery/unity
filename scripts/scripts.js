@@ -228,23 +228,20 @@ function addCardNavigation() {
 
       // Create navigation buttons
       const prevButton = document.createElement('button');
-      //prevButton.innerHTML = '&lt;';
       prevButton.innerHTML = 'Previous';
       prevButton.classList.add('card-nav', 'prev');
       
       const nextButton = document.createElement('button'); 
-      //nextButton.innerHTML = '&gt;';
       nextButton.innerHTML = 'Next';
       nextButton.classList.add('card-nav', 'next');
 
       // Add click handlers
       let scrollAmount = 0;
-      //const cardWidth = cardList.offsetWidth;
-      const cardWidth = '500px';
+      const cardWidth = 500; // Convert to number for calculations
 
       prevButton.addEventListener('click', () => {
         scrollAmount = Math.max(scrollAmount - cardWidth, 0);
-        cardList.scroll({
+        cardList.scrollTo({
           left: scrollAmount,
           behavior: 'smooth'
         });
@@ -252,9 +249,9 @@ function addCardNavigation() {
 
       nextButton.addEventListener('click', () => {
         scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
-        cardList.scroll({
-          left: scrollAmount,
-          behavior: 'smooth' 
+        cardList.scrollTo({
+          left: scrollAmount, 
+          behavior: 'smooth'
         });
       });
 
@@ -262,16 +259,20 @@ function addCardNavigation() {
       container.style.position = 'relative';
       container.appendChild(prevButton);
       container.appendChild(nextButton);
+
+      // Enable horizontal scrolling
+      cardList.style.overflowX = 'scroll';
+      cardList.style.scrollBehavior = 'smooth';
+      cardList.style.scrollSnapType = 'x mandatory';
     });
   };
 
-  // Delay initialization by 2 seconds
-  setTimeout(() => {
-    if (document.readyState === 'complete' || document.readyState === 'interactive') {
-      initializeNav();
-    }
+  // Initialize immediately if DOM is ready
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    initializeNav();
+  } else {
     document.addEventListener('DOMContentLoaded', initializeNav);
-  }, 1000);
+  }
 }
 
 // Initialize card navigation with delay
