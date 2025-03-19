@@ -237,7 +237,7 @@ function addCardNavigation() {
 
       // Add click handlers
       let scrollAmount = 0;
-      const cardWidth = cardList.querySelector('li').offsetWidth; // Get actual card width dynamically
+      const cardWidth = 500; // Convert to number for calculations
 
       prevButton.addEventListener('click', function(e) {
         scrollAmount = Math.max(scrollAmount - cardWidth, 0);
