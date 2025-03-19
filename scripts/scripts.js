@@ -228,52 +228,50 @@ function addCardNavigation() {
 
       // Create navigation buttons
       const prevButton = document.createElement('button');
+      //prevButton.innerHTML = '&lt;';
       prevButton.innerHTML = 'Previous';
       prevButton.classList.add('card-nav', 'prev');
       
       const nextButton = document.createElement('button'); 
+      //nextButton.innerHTML = '&gt;';
       nextButton.innerHTML = 'Next';
       nextButton.classList.add('card-nav', 'next');
 
       // Add click handlers
-      let currentScroll = 0;
-      const cardWidth = cardList.querySelector('li').offsetWidth;
-      const scrollWidth = cardList.scrollWidth;
-      const visibleWidth = cardList.clientWidth;
+      let scrollAmount = 0;
+      const cardWidth = cardList.offsetWidth;
 
       prevButton.addEventListener('click', () => {
-        currentScroll = Math.max(currentScroll - cardWidth, 0);
-        cardList.style.transform = `translateX(-${currentScroll}px)`;
-        cardList.style.transition = 'transform 0.3s ease-in-out';
+        scrollAmount = Math.max(scrollAmount - cardWidth, 0);
+        cardList.scroll({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
       });
 
       nextButton.addEventListener('click', () => {
-        const maxScroll = scrollWidth - visibleWidth;
-        currentScroll = Math.min(currentScroll + cardWidth, maxScroll);
-        cardList.style.transform = `translateX(-${currentScroll}px)`;
-        cardList.style.transition = 'transform 0.3s ease-in-out';
+        scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
+        cardList.scroll({
+          left: scrollAmount,
+          behavior: 'smooth' 
+        });
       });
 
       // Add buttons to container
       container.style.position = 'relative';
       container.appendChild(prevButton);
       container.appendChild(nextButton);
-
-      // Set initial styles for smooth sliding
-      cardList.style.display = 'flex';
-      cardList.style.overflow = 'hidden';
-      cardList.style.scrollBehavior = 'smooth';
-      cardList.style.transition = 'transform 0.3s ease-in-out';
     });
   };
 
-  // Initialize when DOM is ready
-  if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    initializeNav();
-  } else {
+  // Delay initialization by 2 seconds
+  setTimeout(() => {
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      initializeNav();
+    }
     document.addEventListener('DOMContentLoaded', initializeNav);
-  }
+  }, 1000);
 }
 
-// Initialize card navigation
-addCardNavigation();
+// Initialize card navigation with delay
+setTimeout(addCardNavigation, 1000);
