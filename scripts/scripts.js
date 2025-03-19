@@ -240,17 +240,17 @@ function addCardNavigation() {
       const cardWidth = 500; // Convert to number for calculations
 
       prevButton.addEventListener('click', () => {
-        scrollAmount = Math.max(scrollAmount - cardWidth, 0);
+        //scrollAmount = Math.max(scrollAmount - cardWidth, 0);
         cardList.scrollTo({
-          left: scrollAmount,
+          left: cardWidth,
           behavior: 'smooth'
         });
       });
 
       nextButton.addEventListener('click', () => {
-        scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
+        //scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
         cardList.scrollTo({
-          left: scrollAmount, 
+          left: cardWidth, 
           behavior: 'smooth'
         });
       });
