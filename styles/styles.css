@@ -288,10 +288,10 @@ main .section.take-charge h2 {
 }
 main .section.take-charge .cards-wrapper {
   margin-bottom: 10rem;
+  width: 1700px;
 }
 main .section.take-charge .cards-wrapper .cards ul {
   grid-template-columns: auto auto auto auto;
-  width: 1700px;
 }
 main .section.take-charge .cards-wrapper .cards ul li {
   display: flex;
@@ -492,6 +492,9 @@ main .section.customers-say h2 {
   align-items: center;
   justify-content: center;
 }
+main .section.customers-say .cards-wrapper .cards {
+  width: 1700px;
+}
 main .section.customers-say .cards-wrapper .cards ul {
   grid-template-columns: auto auto auto auto;
   width: 1700px;
@@ -556,6 +559,9 @@ main .section.blogs-stories h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+main .section.blogs-stories .cards-wrapper .cards {
+  width: 1700px;
 }
 main .section.blogs-stories .cards-wrapper .cards ul {
   grid-template-columns: auto auto auto auto;
