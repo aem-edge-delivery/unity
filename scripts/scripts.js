@@ -228,11 +228,13 @@ function addCardNavigation() {
 
       // Create navigation buttons
       const prevButton = document.createElement('button');
-      prevButton.innerHTML = '&lt;';
+      //prevButton.innerHTML = '&lt;';
+      prevButton.innerHTML = 'Previous';
       prevButton.classList.add('card-nav', 'prev');
       
       const nextButton = document.createElement('button'); 
-      nextButton.innerHTML = '&gt;';
+      //nextButton.innerHTML = '&gt;';
+      nextButton.innerHTML = 'Next';
       nextButton.classList.add('card-nav', 'next');
 
       // Add click handlers
@@ -262,14 +264,14 @@ function addCardNavigation() {
     });
   };
 
-  // Try to initialize immediately if DOM is already loaded
-  if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    initializeNav();
-  }
-
-  // Also add DOMContentLoaded listener as fallback
-  document.addEventListener('DOMContentLoaded', initializeNav);
+  // Delay initialization by 2 seconds
+  setTimeout(() => {
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      initializeNav();
+    }
+    document.addEventListener('DOMContentLoaded', initializeNav);
+  }, 2000);
 }
 
-// Initialize card navigation
-addCardNavigation();
+// Initialize card navigation with delay
+setTimeout(addCardNavigation, 2000);
