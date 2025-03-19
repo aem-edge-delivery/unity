@@ -237,19 +237,19 @@ function addCardNavigation() {
 
       // Add click handlers
       let scrollAmount = 0;
-      const cardWidth = 500; // Convert to number for calculations
+      const cardWidth = cardList.querySelector('li').offsetWidth; // Get actual card width dynamically
 
       prevButton.addEventListener('click', function(e) {
-        //scrollAmount = Math.max(scrollAmount - cardWidth, 0);
+        scrollAmount = Math.max(scrollAmount - cardWidth, 0);
         let nodeToScroll = e.currentTarget.parentNode.getElementsByTagName('ul')[0];
-        nodeToScroll.style.transform = 'translateX(500px)';
+        nodeToScroll.style.transform = 'translateX(scrollAmount)';
         nodeToScroll.style.transition = 'transform 0.5s ease';
       });
 
       nextButton.addEventListener('click', function(e) {
-        //scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
+        scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
         let nodeToScroll = e.currentTarget.parentNode.getElementsByTagName('ul')[0];
-        nodeToScroll.style.transform = 'translateX(-500px)';
+        nodeToScroll.style.transform = 'translateX(scrollAmount)';
         nodeToScroll.style.transition = 'transform 0.5s ease';
       });
 
