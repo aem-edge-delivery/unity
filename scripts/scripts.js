@@ -219,7 +219,7 @@ function addCardNavigation() {
     
     cardContainers.forEach(container => {
       console.log('cardContainers container: ', container);
-      const cardList = container.querySelector('ul') || container.querySelector('div[data-aue-label="Card"]');
+      const cardList = container.querySelector('ul');
       console.log('cardList:', cardList); // Debug log
       if (!cardList) {
         console.log('No cardList found in container:', container); // Debug log
@@ -239,7 +239,8 @@ function addCardNavigation() {
 
       // Add click handlers
       let scrollAmount = 0;
-      const cardWidth = cardList.offsetWidth;
+      //const cardWidth = cardList.offsetWidth;
+      const cardWidth = '500px';
 
       prevButton.addEventListener('click', () => {
         scrollAmount = Math.max(scrollAmount - cardWidth, 0);
