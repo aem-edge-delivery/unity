@@ -219,7 +219,7 @@ function addCardNavigation() {
     
     cardContainers.forEach(container => {
       console.log('cardContainers container: ', container);
-      const cardList = container.getElementsByTagName('ul')[0];
+      const cardList = container.querySelector('ul') || container.querySelector('div[data-aue-label="Card"]');
       console.log('cardList:', cardList); // Debug log
       if (!cardList) {
         console.log('No cardList found in container:', container); // Debug log
