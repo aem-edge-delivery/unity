@@ -239,18 +239,18 @@ function addCardNavigation() {
       let scrollAmount = 0;
       const cardWidth = 500; // Convert to number for calculations
 
-      prevButton.addEventListener('click', (this) => {
+      prevButton.addEventListener('click', function(e) {
         //scrollAmount = Math.max(scrollAmount - cardWidth, 0);
-        let nodeToScroll = this.parentNode.getElementsByTagName('ul')[0];
+        let nodeToScroll = e.currentTarget.parentNode.getElementsByTagName('ul')[0];
         nodeToScroll.scrollTo({
           left: cardWidth,
           behavior: 'smooth'
         });
       });
 
-      nextButton.addEventListener('click', () => {
+      nextButton.addEventListener('click', function(e) {
         //scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
-        let nodeToScroll = this.parentNode.getElementsByTagName('ul')[0];
+        let nodeToScroll = e.currentTarget.parentNode.getElementsByTagName('ul')[0];
         nodeToScroll.scrollTo({
           left: cardWidth, 
           behavior: 'smooth'
