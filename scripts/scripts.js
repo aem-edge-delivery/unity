@@ -212,49 +212,52 @@ window.addEventListener('load', handleClassScrollFocus);
 
 // Add slider navigation buttons to cards
 function addCardNavigation() {
-  console.log('addCardNavigation');
-  const cardContainers = document.querySelectorAll('.cards');
-  
-  cardContainers.forEach(container => {
-    console.log('cardContainers');
-    const cardList = container.querySelector('ul');
-    if (!cardList) return;
-
-    // Create navigation buttons
-    const prevButton = document.createElement('button');
-    prevButton.innerHTML = '&lt;';
-    prevButton.classList.add('card-nav', 'prev');
+  // Wait for DOM to be ready
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('addCardNavigation');
+    const cardContainers = document.querySelectorAll('.cards');
     
-    const nextButton = document.createElement('button'); 
-    nextButton.innerHTML = '&gt;';
-    nextButton.classList.add('card-nav', 'next');
+    cardContainers.forEach(container => {
+      console.log('cardContainers');
+      const cardList = container.querySelector('ul');
+      if (!cardList) return;
 
-    // Add click handlers
-    let scrollAmount = 0;
-    const cardWidth = cardList.offsetWidth;
+      // Create navigation buttons
+      const prevButton = document.createElement('button');
+      prevButton.innerHTML = '&lt;';
+      prevButton.classList.add('card-nav', 'prev');
+      
+      const nextButton = document.createElement('button'); 
+      nextButton.innerHTML = '&gt;';
+      nextButton.classList.add('card-nav', 'next');
 
-    prevButton.addEventListener('click', () => {
-      scrollAmount = Math.max(scrollAmount - cardWidth, 0);
-      cardList.scroll({
-        left: scrollAmount,
-        behavior: 'smooth'
+      // Add click handlers
+      let scrollAmount = 0;
+      const cardWidth = cardList.offsetWidth;
+
+      prevButton.addEventListener('click', () => {
+        scrollAmount = Math.max(scrollAmount - cardWidth, 0);
+        cardList.scroll({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
       });
-    });
 
-    nextButton.addEventListener('click', () => {
-      scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
-      cardList.scroll({
-        left: scrollAmount,
-        behavior: 'smooth' 
+      nextButton.addEventListener('click', () => {
+        scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
+        cardList.scroll({
+          left: scrollAmount,
+          behavior: 'smooth' 
+        });
       });
-    });
 
-    // Add buttons to container
-    container.style.position = 'relative';
-    container.appendChild(prevButton);
-    container.appendChild(nextButton);
+      // Add buttons to container
+      container.style.position = 'relative';
+      container.appendChild(prevButton);
+      container.appendChild(nextButton);
+    });
   });
 }
 
 // Initialize card navigation
-window.addEventListener('load', addCardNavigation);
+addCardNavigation();
