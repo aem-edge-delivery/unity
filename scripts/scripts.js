@@ -212,15 +212,19 @@ window.addEventListener('load', handleClassScrollFocus);
 
 // Add slider navigation buttons to cards
 function addCardNavigation() {
-  // Wait for DOM to be ready
-  document.addEventListener('DOMContentLoaded', () => {
+  // Function to initialize navigation
+  const initializeNav = () => {
     console.log('addCardNavigation');
     const cardContainers = document.querySelectorAll('.cards');
     
     cardContainers.forEach(container => {
       console.log('cardContainers');
       const cardList = container.querySelector('ul');
-      if (!cardList) return;
+      console.log('cardList:', cardList); // Debug log
+      if (!cardList) {
+        console.log('No cardList found in container:', container); // Debug log
+        return;
+      }
 
       // Create navigation buttons
       const prevButton = document.createElement('button');
@@ -256,7 +260,15 @@ function addCardNavigation() {
       container.appendChild(prevButton);
       container.appendChild(nextButton);
     });
-  });
+  };
+
+  // Try to initialize immediately if DOM is already loaded
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    initializeNav();
+  }
+
+  // Also add DOMContentLoaded listener as fallback
+  document.addEventListener('DOMContentLoaded', initializeNav);
 }
 
 // Initialize card navigation
