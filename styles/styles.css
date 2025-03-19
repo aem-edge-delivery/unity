@@ -648,10 +648,12 @@ main .section.elevate-banking h2 {
 
 main .section .cards-wrapper .cards .card-nav.prev {
   background-color: #fff;
+  border: 1px solid #ddd;
   width: 50px;
   height: 50px;
   border-radius: 50px;
   margin-top: 4rem;
+  margin-right: 25px;
 }
 main .section .cards-wrapper .cards .card-nav.prev .fas {
   display: none;
@@ -660,9 +662,9 @@ main .section .cards-wrapper .cards .card-nav.prev::after {
   font-family: var(--fa-font-family);
   content: "\f053";
   color: var(--text-color);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 100;
-  width: 20px;
+  width: 18px;
   float: right;
   margin-left: 0;
   margin-top: 0;
@@ -672,6 +674,7 @@ main .section .cards-wrapper .cards .card-nav.prev::after {
 }
 main .section .cards-wrapper .cards .card-nav.next {
   background-color: #fff;
+  border: 1px solid #ddd;
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -684,9 +687,9 @@ main .section .cards-wrapper .cards .card-nav.next::after {
   font-family: var(--fa-font-family);
   content: "\f054";
   color: var(--text-color);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 100;
-  width: 20px;
+  width: 14px;
   float: right;
   margin-left: 0;
   margin-top: 0;
