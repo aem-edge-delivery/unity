@@ -461,7 +461,7 @@ main .section.banking-simple .columns-wrapper .columns h3 {
   font-weight: 800;
 }
 main .section.banking-simple .columns-wrapper .columns p {
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -497,7 +497,8 @@ main .section.customers-say .cards-wrapper .cards ul li {
   border: none;
   border-radius: 16px;
   position: relative;
-  background: #fff;
+  color: #fff;
+  background: #323232;
   box-shadow: 0 4px 16px 0 hsla(50, 20%, 57%, .12), 0 0 4px 0 rgba(0, 0, 0, .1), 0 0 1px 0 rgba(0, 0, 0, .13);
 }
 main .section.customers-say .cards-wrapper .cards ul li .cards-card-body {
@@ -507,12 +508,15 @@ main .section.customers-say .cards-wrapper .cards ul li .cards-card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 16px;
+  color: #fffc;
 }
 main .section.customers-say .cards-wrapper .cards h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   margin: 15px 0;
+  color: #fff;
 }
 main .section.customers-say .cards-wrapper .cards p {
   font-size: 16px;
