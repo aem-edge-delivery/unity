@@ -205,3 +205,54 @@ function handleClassScrollFocus() {
 
 // Initialize class-specific scroll focus handling
 window.addEventListener('load', handleClassScrollFocus);
+
+
+
+
+
+// Add slider navigation buttons to cards
+function addCardNavigation() {
+  const cardContainers = document.querySelectorAll('.cards');
+  
+  cardContainers.forEach(container => {
+    const cardList = container.querySelector('ul');
+    if (!cardList) return;
+
+    // Create navigation buttons
+    const prevButton = document.createElement('button');
+    prevButton.innerHTML = '&lt;';
+    prevButton.classList.add('card-nav', 'prev');
+    
+    const nextButton = document.createElement('button'); 
+    nextButton.innerHTML = '&gt;';
+    nextButton.classList.add('card-nav', 'next');
+
+    // Add click handlers
+    let scrollAmount = 0;
+    const cardWidth = cardList.offsetWidth;
+
+    prevButton.addEventListener('click', () => {
+      scrollAmount = Math.max(scrollAmount - cardWidth, 0);
+      cardList.scroll({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+
+    nextButton.addEventListener('click', () => {
+      scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
+      cardList.scroll({
+        left: scrollAmount,
+        behavior: 'smooth' 
+      });
+    });
+
+    // Add buttons to container
+    container.style.position = 'relative';
+    container.appendChild(prevButton);
+    container.appendChild(nextButton);
+  });
+}
+
+// Initialize card navigation
+window.addEventListener('load', addCardNavigation);
