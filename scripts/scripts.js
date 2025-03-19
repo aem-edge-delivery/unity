@@ -212,9 +212,11 @@ window.addEventListener('load', handleClassScrollFocus);
 
 // Add slider navigation buttons to cards
 function addCardNavigation() {
+  console.log('addCardNavigation');
   const cardContainers = document.querySelectorAll('.cards');
   
   cardContainers.forEach(container => {
+    console.log('cardContainers');
     const cardList = container.querySelector('ul');
     if (!cardList) return;
 
