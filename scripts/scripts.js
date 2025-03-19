@@ -228,11 +228,13 @@ function addCardNavigation() {
 
       // Create navigation buttons
       const prevButton = document.createElement('button');
-      prevButton.innerHTML = 'Previous';
+      //prevButton.innerHTML = 'Previous';
+      prevButton.innerHTML = '<i class="fas fa-chevron-left"></i>';
       prevButton.classList.add('card-nav', 'prev');
       
       const nextButton = document.createElement('button'); 
-      nextButton.innerHTML = 'Next';
+      //nextButton.innerHTML = 'Next';
+      nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>';
       nextButton.classList.add('card-nav', 'next');
 
       // Add click handlers
