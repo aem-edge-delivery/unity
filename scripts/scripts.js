@@ -239,9 +239,10 @@ function addCardNavigation() {
       let scrollAmount = 0;
       const cardWidth = 500; // Convert to number for calculations
 
-      prevButton.addEventListener('click', () => {
+      prevButton.addEventListener('click', (this) => {
         //scrollAmount = Math.max(scrollAmount - cardWidth, 0);
-        cardList.scrollTo({
+        let nodeToScroll = this.parentNode.getElementsByTagName('ul')[0];
+        nodeToScroll.scrollTo({
           left: cardWidth,
           behavior: 'smooth'
         });
@@ -249,7 +250,8 @@ function addCardNavigation() {
 
       nextButton.addEventListener('click', () => {
         //scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
-        cardList.scrollTo({
+        let nodeToScroll = this.parentNode.getElementsByTagName('ul')[0];
+        nodeToScroll.scrollTo({
           left: cardWidth, 
           behavior: 'smooth'
         });
