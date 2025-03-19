@@ -558,15 +558,12 @@ main .section.blogs-stories .cards-wrapper .cards ul {
 main .section.blogs-stories .cards-wrapper .cards ul li {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 32px 32px 40px;
   border: none;
+  border-radius: 16px;
   position: relative;
-  background: transparent;
-}
-main .section.blogs-stories .cards-wrapper .cards ul li .cards-card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background: #ffffff;
+  box-shadow: 0 4px 16px 0 hsla(50, 20%, 57%, .12), 0 0 4px 0 rgba(0, 0, 0, .1), 0 0 1px 0 rgba(0, 0, 0, .13);
 }
 main .section.blogs-stories .cards-wrapper .cards ul li .cards-card-body {
   padding: 0;
@@ -575,6 +572,7 @@ main .section.blogs-stories .cards-wrapper .cards ul li .cards-card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 16px;
 }
 main .section.blogs-stories .cards-wrapper .cards h3 {
   font-size: 24px;
