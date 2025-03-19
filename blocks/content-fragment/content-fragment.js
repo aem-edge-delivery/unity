@@ -1,8 +1,6 @@
 export default async function decorate(block) {
-    console.log("Content Fragment component executed successfully");
     const offerpath = block.querySelector(':scope div:nth-child(1) > div a').innerHTML.trim();
-    console.log("Offer path: ", offerpath);
-    const cfReq = await fetch("https://author-p140426-e1433687.adobeaemcloud.com/content/dam/mobile/en/fragments/default/jcr%3Acontent/data/master.json")
+    const cfReq = await fetch("https://author-p140426-e1433687.adobeaemcloud.com" + offerpath + "/jcr%3Acontent/data/master.json")
     .then((response) => response.json()).then((contentfragment) => {
       let offer = {};
       if (contentfragment) {
@@ -18,11 +16,14 @@ export default async function decorate(block) {
     
     block.innerHTML = `
       <div class="banner-content" data-aue-type="reference" data-aue-filter="cf">
-        <div class="banner-container" style="background-image: url('${cfReq.bannerimage}'); min-height: 670px">
+        <div class="banner-text-header">
+          ${cfReq.title ? `<h1 data-aue-prop="title" data-aue-type="text" class="headline">${cfReq.title}</h1>` : ''}
+          ${cfReq.subtitle ? `<h2 data-aue-prop="subtitle" data-aue-type="text" class="subtitle">${cfReq.subtitle}</h2>` : ''}
+        </div>
+        <div class="banner-container">
+          <img src="${cfReq.bannerimage}" alt="${cfReq.title || 'Banner image'}" class="banner-image">
           <div class="banner-overlay">
             <div class="banner-text-content">
-              ${cfReq.title ? `<h1 data-aue-prop="title" data-aue-type="text" class="headline">${cfReq.title}</h1>` : ''}
-              ${cfReq.subtitle ? `<h2 data-aue-prop="subtitle" data-aue-type="text" class="subtitle">${cfReq.subtitle}</h2>` : ''}
               ${cfReq.description ? `<p data-aue-prop="description" data-aue-type="text" class="description">${cfReq.description}</p>` : ''}
               ${cfReq.ctaurl ? `
                 <div class="button-container">
