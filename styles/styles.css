@@ -487,6 +487,48 @@ main .section.customers-say h2 {
   align-items: center;
   justify-content: center;
 }
+main .section.customers-say .cards-wrapper .cards ul {
+  grid-template-columns: auto auto auto;
+}
+main .section.customers-say .cards-wrapper .cards ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px 40px;
+  border: none;
+  border-radius: 16px;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 16px 0 hsla(50, 20%, 57%, .12), 0 0 4px 0 rgba(0, 0, 0, .1), 0 0 1px 0 rgba(0, 0, 0, .13);
+}
+main .section.customers-say .cards-wrapper .cards ul li .cards-card-body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .section.customers-say .cards-wrapper .cards h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 15px 0;
+}
+main .section.customers-say .cards-wrapper .cards p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 main .section.blogs-stories {
