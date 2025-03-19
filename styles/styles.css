@@ -286,8 +286,12 @@ main .section.take-charge h2 {
   align-items: center;
   justify-content: center;
 }
+main .section.take-charge .cards-wrapper {
+  margin-bottom: 10rem;
+}
 main .section.take-charge .cards-wrapper .cards ul {
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  width: 1700px;
 }
 main .section.take-charge .cards-wrapper .cards ul li {
   display: flex;
@@ -424,6 +428,10 @@ main .section.banking-simple .content-fragment-wrapper .content-fragment .banner
   font-size: 18px;
   margin: 3rem 15%;
 }
+main .section.banking-simple .content-fragment-wrapper .content-fragment .banner-content .button-container {
+  text-align: center;
+  height: 75px;
+}
 main .section.banking-simple .content-fragment-wrapper .content-fragment .banner-content .button-container a  {
   padding: 15px 20px 15px 20px;
   background: #ffffff;
@@ -434,11 +442,7 @@ main .section.banking-simple .content-fragment-wrapper .content-fragment .banner
   transition: 0.3s;
   color: #000;
 }
-main .section.banking-simple .content-fragment-wrapper .content-fragment .banner-content .button-container {
-  text-align: center;
-  height: 75px;
-}
-main .section.banking-simple .content-fragment-wrapper .content-fragment .banner-content .button-container a ::after {
+main .section.banking-simple .content-fragment-wrapper .content-fragment .banner-content .button-container a::after {
   font-family: var(--fa-font-family);
   content: "\f061";
   color: var(--text-color);
@@ -489,7 +493,8 @@ main .section.customers-say h2 {
   justify-content: center;
 }
 main .section.customers-say .cards-wrapper .cards ul {
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  width: 1700px;
 }
 main .section.customers-say .cards-wrapper .cards ul li {
   display: flex;
@@ -553,7 +558,8 @@ main .section.blogs-stories h2 {
   justify-content: center;
 }
 main .section.blogs-stories .cards-wrapper .cards ul {
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  width: 1700px;
 }
 main .section.blogs-stories .cards-wrapper .cards ul li {
   display: flex;
