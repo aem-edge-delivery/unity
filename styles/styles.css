@@ -288,6 +288,8 @@ main .section.take-charge h2 {
 }
 main .section.take-charge .cards-wrapper {
   margin-bottom: 10rem;
+}
+main .section.take-charge .cards-wrapper .cards {
   width: 1700px;
 }
 main .section.take-charge .cards-wrapper .cards ul {
