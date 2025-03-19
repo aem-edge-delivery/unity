@@ -413,6 +413,62 @@ main .section.banking-simple h2 {
   align-items: center;
   justify-content: center;
 }
+main .section.banking-simple .content-fragment-wrapper .content-fragment .banner-content h1  {
+    display: none;
+}
+main .section.banking-simple .content-fragment-wrapper .content-fragment .banner-content h2  {
+  display: none;
+}
+main .section.banking-simple .content-fragment-wrapper .content-fragment .banner-content p  {
+  text-align: center;
+  font-size: 18px;
+  margin: 3rem 15%;
+}
+main .section.banking-simple .content-fragment-wrapper .content-fragment .banner-content .button-container a  {
+  padding: 15px 20px 15px 20px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 99px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+  color: #000;
+}
+main .section.banking-simple .content-fragment-wrapper .content-fragment .banner-content .button-container {
+  text-align: center;
+  height: 75px;
+}
+main .section.banking-simple .content-fragment-wrapper .content-fragment .banner-content .button-container a ::after {
+  font-family: var(--fa-font-family);
+  content: "\f061";
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 100;
+  width: 20px;
+  float: right;
+  margin-left: 0;
+  margin-top: 0;
+  border: none;
+  padding: 1px 5px;
+  cursor: pointer;
+}
+
+main .section.banking-simple .columns-wrapper {
+  margin: 4rem auto 1rem;
+}
+main .section.banking-simple .columns-wrapper .columns h3 {
+  font-size: 45px;
+  font-weight: 800;
+}
+main .section.banking-simple .columns-wrapper .columns p {
+  text-align: center;
+}
+
+
+
+
+
+
 
 
 main .section.customers-say {
