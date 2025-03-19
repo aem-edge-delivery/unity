@@ -242,19 +242,13 @@ function addCardNavigation() {
       prevButton.addEventListener('click', function(e) {
         //scrollAmount = Math.max(scrollAmount - cardWidth, 0);
         let nodeToScroll = e.currentTarget.parentNode.getElementsByTagName('ul')[0];
-        nodeToScroll.scrollTo({
-          left: cardWidth,
-          behavior: 'smooth'
-        });
+        nodeToScroll.style.transform = 'translateX(-500px)';
       });
 
       nextButton.addEventListener('click', function(e) {
         //scrollAmount = Math.min(scrollAmount + cardWidth, cardList.scrollWidth - cardList.clientWidth);
         let nodeToScroll = e.currentTarget.parentNode.getElementsByTagName('ul')[0];
-        nodeToScroll.scrollTo({
-          left: cardWidth, 
-          behavior: 'smooth'
-        });
+        nodeToScroll.style.transform = 'translateX(500px)';
       });
 
       // Add buttons to container
