@@ -10,10 +10,6 @@ main .banner-container > div {
   align-items: center;
   min-height: 300px;
   padding: 40px;
-  background: linear-gradient(135deg, var(--background-color, #f5f5f5) 0%, var(--accent-color, #e0e0e0) 100%);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .banner.banner-visible {
@@ -66,6 +62,50 @@ main .banner-container > div {
 .banner .z-30 {
     z-index: 30;
 }
+
+
+.banner .cWzrkZ {
+    cursor: pointer;
+    width: 100%;
+    background: rgb(251, 248, 236);
+    border: 0.94px solid rgb(217, 212, 202);
+    box-shadow: rgba(124, 76, 3, 0.05) 0px 3.47px 16.33px 0px;
+    border-radius: 12px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner .h-60 {
+    height: 15rem;
+}
+.banner .h-80 {
+    height: 20rem;
+}
+.banner .h-96 {
+    height: 24rem;
+}
+
+.banner  img, .banner svg {
+    display: block;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.banner  .cWzrkZ .text {
+    font-size: 13.9px;
+    font-weight: 500;
+    line-height: 17.37px;
+    text-align: center;
+    margin-top: 12px;
+}
+.banner  .cWzrkZ .arrow {
+    margin-top: 8px;
+    opacity: 0;
+    translate: 0px 8px;
+    transition: 0.5s;
+}
+
 
 
 
