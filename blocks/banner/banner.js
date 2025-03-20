@@ -12,19 +12,11 @@ export default function decorate(block) {
     bannerContent.appendChild(content.firstElementChild);
   }
 
-  // Create image wrapper
-  const bannerImage = document.createElement('div');
-  bannerImage.className = 'banner-image';
-  if (image) {
-    while (image.firstElementChild) {
-      bannerImage.appendChild(image.firstElementChild);
-    }
-  }
 
   // Clear the block and add the new structure
   block.textContent = '';
   block.appendChild(bannerContent);
-  block.appendChild(bannerImage);
+  //block.appendChild(bannerImage);
 
   // Add animation class after a short delay
   setTimeout(() => {
