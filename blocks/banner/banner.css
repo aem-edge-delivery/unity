@@ -43,11 +43,13 @@ main .banner-container > div {
     margin-bottom: 5rem;
 }
 .banner-image h1 {
-    width: 75%;
+    width: 80%;
     margin: 10px auto;
+    font-size: 65px;
+    font-weight: 800;
 }
 .banner-image p {
-    width: 50%;
+    width: 65%;
     margin: 20px auto 10px;
     font-size: 18px;
     line-height: 30px;
