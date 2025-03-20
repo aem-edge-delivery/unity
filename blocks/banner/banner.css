@@ -32,11 +32,27 @@ main .banner-container > div {
   opacity: 1;
   transform: translateY(0);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
   flex-shrink: 0;
   box-sizing: border-box;
 }
+
+
+.banner-image {
+    margin-bottom: 5rem;
+}
+.banner-image h1 {
+    width: 75%;
+    margin: 10px auto;
+}
+.banner-image p {
+    width: 50%;
+    margin: 20px auto 10px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
 
 .banner-content {   
   display: flex;
@@ -46,10 +62,10 @@ main .banner-container > div {
   flex: 1;
   z-index: 1;
 }
-
 .banner-content > div {
     z-index: 2;
 }
+
 
 .banner a {
   color: inherit;
