@@ -12,7 +12,7 @@ export default function decorate(block) {
   let imgLeft = document.createElement("div");
   imgLeft.setAttribute("class", "img-left");
   imgLeft.innerHTML = `
-    <a class="w-full -mr-4 z-10" href="/personal-banking/safe-deposit-locker">
+    <a class="w-full -mr-4 z-10" href="#">
       <div class="sc-eauhAA cWzrkZ h-60">
           <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M38.8256 31.3646L17.7179 44.2066L14.7568 35.1214L35.7847 22.624L38.8256 31.3646Z" fill="#1F1F1F" stroke="#1F1F1F" stroke-width="0.196819" stroke-linejoin="round"></path>
@@ -77,7 +77,7 @@ export default function decorate(block) {
         </div>
       </div>
     </a>
-    <a class="w-full -mr-4 z-20" href="/business-banking/accounts/current-account">
+    <a class="w-full -mr-4 z-20" href="#">
       <div class="sc-eauhAA cWzrkZ h-80">
           <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M26.8346 12.3497L22.1172 10.8936L16.4922 13.8191V41.8981L28.5567 40.9273L26.8346 12.3497Z" fill="#1F1F1F" stroke="#1F1F1F" stroke-width="0.249338" stroke-linejoin="round"></path>
@@ -109,7 +109,7 @@ export default function decorate(block) {
         </div>
       </div>
     </a>
-    <a class="w-full -mr-4 z-30" href="/personal-banking/accounts/savings-account">
+    <a class="w-full -mr-4 z-30" href="#">
       <div class="sc-eauhAA cWzrkZ h-96">
         <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M30.9923 14.473L26.1188 12.9678L20.3008 15.9934V45.0074L32.7723 44.0064L30.9923 14.473Z" fill="#1F1F1F" stroke="#1F1F1F" stroke-width="0.282242" stroke-linejoin="round"></path>
@@ -165,7 +165,7 @@ bannerContent.appendChild(imgLeft);
   let imgRight = document.createElement("div");
   imgRight.setAttribute("class", "img-right");
   imgRight.innerHTML = `
-  <a class="w-full -ml-4 z-30" href="/personal-banking/deposits/fixed-deposit">
+  <a class="w-full -ml-4 z-30" href="#">
     <div class="sc-eauhAA cWzrkZ h-96">
         <svg width="73" height="70" viewBox="0 0 73 70" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M71.1401 44.7354L24.4412 21.0053C24.2549 20.905 24.046 20.8541 23.8344 20.8576C23.6228 20.861 23.4156 20.9187 23.2327 21.0251L2.0749 32.6245L1.00391 32.8553C1.01748 33.3525 1.03146 33.8496 1.04586 34.3465C1.03038 34.792 1.13161 35.2337 1.33952 35.628C1.4853 35.9006 1.68024 36.1439 1.9145 36.3456L47.8545 61.5312C48.5399 61.9077 49.3125 62.0968 50.0943 62.0795C50.8761 62.0621 51.6395 61.839 52.3076 61.4324L72.2111 49.1302C72.4456 48.9354 72.6293 48.6867 72.7466 48.4053C72.8956 48.041 72.9285 47.6396 72.841 47.2558L72.6423 45.5079L71.1401 44.7354Z" fill="#1F1F1F" stroke="#1F1F1F" stroke-width="0.237621" stroke-linejoin="round"></path>
@@ -205,7 +205,7 @@ bannerContent.appendChild(imgLeft);
         </div>
     </div>
   </a>
-  <a class="w-full -ml-4 z-20" href="/personal-banking/deposits/recurring-deposit">
+  <a class="w-full -ml-4 z-20" href="#">
     <div class="sc-eauhAA cWzrkZ h-80">
         <svg width="73" height="70" viewBox="0 0 73 70" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M71.1401 44.7354L24.4412 21.0053C24.2549 20.905 24.046 20.8541 23.8344 20.8576C23.6228 20.861 23.4156 20.9187 23.2327 21.0251L2.0749 32.6245L1.00391 32.8553C1.01748 33.3525 1.03146 33.8496 1.04586 34.3465C1.03038 34.792 1.13161 35.2337 1.33952 35.628C1.4853 35.9006 1.68024 36.1439 1.9145 36.3456L47.8545 61.5312C48.5399 61.9077 49.3125 62.0968 50.0943 62.0795C50.8761 62.0621 51.6395 61.839 52.3076 61.4324L72.2111 49.1302C72.4456 48.9354 72.6293 48.6867 72.7466 48.4053C72.8956 48.041 72.9285 47.6396 72.841 47.2558L72.6423 45.5079L71.1401 44.7354Z" fill="#1F1F1F" stroke="#1F1F1F" stroke-width="0.237621" stroke-linejoin="round"></path>
@@ -248,7 +248,7 @@ bannerContent.appendChild(imgLeft);
         </div>
     </div>
   </a>
-  <a class="w-full -ml-4 z-10" href="/personal-banking/loans/personal-loan">
+  <a class="w-full -ml-4 z-10" href="#">
     <div class="sc-eauhAA cWzrkZ h-60">
         <svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.3398 26.5995V51.7958L30.6577 61.652L58.0687 45.7516L57.8661 16.6641L43.4894 17.4208L29.4641 36.2911L13.3398 26.5995Z" fill="white" stroke="#1F1F1F" stroke-width="0.237455" stroke-linejoin="round"></path>
