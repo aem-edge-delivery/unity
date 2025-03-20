@@ -17,6 +17,7 @@ main .banner-container > div {
   gap: 5px;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .banner .banner-content .img-right {
@@ -24,6 +25,7 @@ main .banner-container > div {
   gap: 5px;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .banner.banner-visible {
