@@ -8,7 +8,18 @@ export default function decorate(block) {
   bannerContent.className = 'banner-content';
 
   
+  // Create image wrapper
+  const bannerImage = document.createElement('div');
+  bannerImage.className = 'banner-image';
+  if (image) {
+    while (image.firstElementChild) {
+      bannerImage.appendChild(image.firstElementChild);
+    }
+  }
 
+
+  
+  // Create content wrapper
   let imgLeft = document.createElement("div");
   imgLeft.setAttribute("class", "img-left");
   imgLeft.innerHTML = `
@@ -304,11 +315,12 @@ bannerContent.appendChild(imgRight);
   
 
 
+
   // Clear the block and add the new structure
   block.textContent = '';
+  block.appendChild(bannerImage);
   block.appendChild(bannerContent);
-  //block.appendChild(bannerImage);
-
+  
   // Add animation class after a short delay
   setTimeout(() => {
     block.classList.add('banner-visible');
